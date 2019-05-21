@@ -1,0 +1,23 @@
+// Styling for the team section
+.about-me-intro {
+  margin: 0px 40px 70px;
+  text-align:center;
+  .me{
+    width: 210px;
+    height: 210px;
+    border: 5px solid $white;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+}
+.tech-stack {
+  margin: 20px, 50px;
+  text-align: center;
+  .icon {
+    color: $primary
+  }
+  p {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+}
