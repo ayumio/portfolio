@@ -1,11 +1,11 @@
 {
-    "title": "Portofolio",
-    "name": "portofolio",
+    "title": "Portfolio",
+    "name": "portfolio",
     "version": "5.1.0",
     "scripts": {
         "start": "gulp watch"
     },
-    "description": "AO Portofolio Website",
+    "description": "Ayumi Ono Portfolio Website",
     "keywords": [
         "css",
         "sass",
