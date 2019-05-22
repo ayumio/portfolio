@@ -1,1 +1,1 @@
-web: node node_modules/gulp build
+web: node node_modules/gulp watch
