@@ -32,7 +32,7 @@ function browserSync(done) {
       baseDir: "./"
     },
     open: false,
-    // port: 3000
+    port: 3000
   });
   done();
 }
