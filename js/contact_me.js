@@ -16,11 +16,11 @@ $(function() {
       if (firstName.indexOf(' ') >= 0) {
         firstName = name.split(' ').slice(0, -1).join(' ')
       }
-      if (name && email && message) {
+      // if (name && email && message) {
         var $this = $('#sendMessageButton')
         var $form = $(this)
+        $this.prop('disabled', true)
         $.post($form.attr('action'), $form.serialize()).then(function(){
-          $this.prop('disabled', true)
           $('#success').html("<div class='alert alert-success'>")
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append('</button>')
@@ -37,7 +37,7 @@ $(function() {
         .then(function() {
           return $(this).is(':visible')
         })
-      }
+      // }
     })
   })
   $('a[data-toggle="tab"]').click(function(e) {
