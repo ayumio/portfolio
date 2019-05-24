@@ -49,9 +49,9 @@ $(function() {
       .then(setTimeout(function() {
         $this.prop('disabled', false) // Re-enable submit button when AJAX call is complete
       }), 1000)
-    })
-    .then(function() {
-        return $(this).is(':visible')
+      .then(function() {
+          return $(this).is(':visible')
+      })
     })
   })
   $('a[data-toggle="tab"]').click(function(e) {
