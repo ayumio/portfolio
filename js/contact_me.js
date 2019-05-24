@@ -23,7 +23,7 @@ $(function() {
     submitError: function($form, event, errors) {
       // additional error messages or events
     },
-    submitSuccess: $('#contactForm').submit (function($form, event) {
+    submitSuccess: $('#contactForm').submit(function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
       var name = $('input#name').val();
@@ -45,8 +45,7 @@ $(function() {
           .append('</div>')
         //clear all fields
         $('#contactForm').trigger('reset')
-      })
-      .then(setTimeout(function() {
+      }).then(setTimeout(function() {
         $this.prop('disabled', false) // Re-enable submit button when AJAX call is complete
       }), 1000)
     })
@@ -54,7 +53,7 @@ $(function() {
   .then(function() {
       return $(this).is(':visible')
   })
-  $('a[data-toggle=\"tab\"]').click(function(e) {
+  $('a[data-toggle="tab"]').click(function(e) {
     e.preventDefault()
     $(this).tab('show')
   })
