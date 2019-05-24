@@ -18,9 +18,9 @@ $(function() {
       }
       if (name && email && message) {
         var $this = $('#sendMessageButton')
-        $this.prop('disabled', true)
         var $form = $('#contactForm')
         $.post($form.attr('action'), $form.serialize()).then(function(){
+          $this.prop('disabled', true)
           $('#success').html("<div class='alert alert-success'>")
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append('</button>')
